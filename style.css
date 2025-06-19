@@ -16,7 +16,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px #284f10cc;
   padding: 20px;
-  overflow: hidden; /* This keeps the image neatly inside */
+  overflow: hidden; /* hides anything outside the box */
 }
 
 .calendar-header {
@@ -94,11 +94,11 @@ textarea {
 /* Transparent background inside calendar */
 .calendar-bg-image {
   position: absolute;
-  bottom: 20px; /* or top: 20px */
-  right: 20px;   /* adjust to "left" if needed */
+  bottom: 20px;  /* or top: 20px */
+  right: 20px;   /* or left: 20px */
   width: 180px;
   height: auto;
-  opacity: 0.2;
+  opacity: 0.2;  /* makes it soft and unobtrusive */
   z-index: 0;
   pointer-events: none;
 }
@@ -106,7 +106,7 @@ textarea {
 /* Bottom corner decor */
 .corner-img {
   position: fixed;
-  width: 120px;
+  width: 250px;
   height: auto;
   opacity: 0.85;
   z-index: 5;
@@ -131,10 +131,13 @@ textarea {
   pointer-events: none;
 }
 .pos1 { top: 40px; left: 50px; }
-.pos2 { top: 120px; right: 80px; }
+.pos2 { top: 40px; right: 50px; }
 .pos3 { top: 50%; left: 5%; transform: translateY(-50%); }
-.pos4 { bottom: 200px; right: 60px; }
-.pos5 { bottom: 20px;left: 50%;transform: translateX(-50%); }
+.pos4 { bottom: 350px; right: 80px; }
+.pos5 { bottom: 20px; left: 50%; transform: translateX(-50%); }
+.pos6 { bottom: 250px; right: 475px; }
+.pos7 { bottom: 250px; left: 475px; }
+
 
 @media (max-width: 600px) {
   .corner-img,
