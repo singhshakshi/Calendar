@@ -126,7 +126,8 @@ textarea {
 .pos6 { bottom: 165px; right: 475px; }
 .pos7 { bottom: 165px; left: 475px; }
 .pos8 { top: 145px; left: 50%; transform: translateX(-50%); width: 400px;  opacity: 0.03; z-index: 4; }
-
+.pos9 { top: 0px; left: 375px; }
+.pos10 { top: 5px; right: 450px; width: 100px;}
 
 @media (max-width: 600px) {
   .corner-img,
