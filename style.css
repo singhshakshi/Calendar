@@ -16,7 +16,6 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px #284f10cc;
   padding: 20px;
-  overflow: hidden; /* hides anything outside the box */
 }
 
 .calendar-header {
@@ -91,17 +90,6 @@ textarea {
   margin-top: 10px;
   padding: 5px;
 }
-/* Transparent background inside calendar */
-.calendar-bg-image {
-  position: absolute;
-  bottom: 20px;  /* or top: 20px */
-  right: 20px;   /* or left: 20px */
-  width: 180px;
-  height: auto;
-  opacity: 0.2;  /* makes it soft and unobtrusive */
-  z-index: 0;
-  pointer-events: none;
-}
 
 /* Bottom corner decor */
 .corner-img {
@@ -137,6 +125,7 @@ textarea {
 .pos5 { bottom: 20px; left: 50%; transform: translateX(-50%); }
 .pos6 { bottom: 250px; right: 475px; }
 .pos7 { bottom: 250px; left: 475px; }
+.pos8 { top: 45px; left: 50%; transform: translateX(-50%); width: 400px;  opacity: 0.03; z-index: 4; }
 
 
 @media (max-width: 600px) {
