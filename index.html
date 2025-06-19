@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Transparent background image behind calendar -->
+  <div class="calendar-bg-image"></div>
+
+  <!-- 2 Fixed corner images at bottom -->
+  <img src="images/bottom-left.png" class="corner-img bottom-left" alt="bottom-left-decor" />
+  <img src="images/bottom-right.png" class="corner-img bottom-right" alt="bottom-right-decor" />
+
+  <!-- 5 scattered decorative images -->
+  <img src="images/scatter1.png" class="scatter-img pos1" alt="scatter1" />
+  <img src="images/scatter2.png" class="scatter-img pos2" alt="scatter2" />
+  <img src="images/scatter3.png" class="scatter-img pos3" alt="scatter3" />
+  <img src="images/scatter4.png" class="scatter-img pos4" alt="scatter4" />
+  <img src="images/scatter5.png" class="scatter-img pos5" alt="scatter5" />
+
+  <!-- Calendar Container -->
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prev">&#8592;</button>
+      <h2 id="month-year"></h2>
+      <button id="next">&#8594;</button>
+    </div>
+    <div class="calendar" id="calendar"></div>
+  </div>
+
+  <!-- Modal for events -->
+  <div id="event-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-btn">&times;</span>
+      <h3 id="modal-date"></h3>
+      <textarea id="event-text" placeholder="Add your event here..."></textarea>
+      <button id="save-event">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

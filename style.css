@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #ffef84;
+}
+
+.calendar-container {
+  position: relative;
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgb(232, 255, 181);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #284f10cc;
+  padding: 20px;
+  overflow: hidden; /* This keeps the image neatly inside */
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar-header h2 {
+  margin: 0;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.calendar div {
+  padding: 10px;
+  background: #b9fefe;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar .today {
+  background: #ffbef6;
+  color: white;
+}
+
+.calendar .has-event {
+  background: #ffeaa7;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(252, 252, 252);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: rgb(255, 187, 218);
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 5px;
+}
+/* Transparent background inside calendar */
+.calendar-bg-image {
+  position: absolute;
+  bottom: 20px; /* or top: 20px */
+  right: 20px;   /* adjust to "left" if needed */
+  width: 180px;
+  height: auto;
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Bottom corner decor */
+.corner-img {
+  position: fixed;
+  width: 120px;
+  height: auto;
+  opacity: 0.85;
+  z-index: 5;
+  pointer-events: none;
+}
+.bottom-left {
+  bottom: 15px;
+  left: 15px;
+}
+.bottom-right {
+  bottom: 15px;
+  right: 15px;
+}
+
+/* Scattered images */
+.scatter-img {
+  position: fixed;
+  width: 150px;
+  height: auto;
+  z-index: 5;
+  opacity: 0.85;
+  pointer-events: none;
+}
+.pos1 { top: 40px; left: 50px; }
+.pos2 { top: 120px; right: 80px; }
+.pos3 { top: 50%; left: 5%; transform: translateY(-50%); }
+.pos4 { bottom: 200px; right: 60px; }
+.pos5 { bottom: 20px;left: 50%;transform: translateX(-50%); }
+
+@media (max-width: 600px) {
+  .corner-img,
+  .scatter-img {
+    width: 60px;
+    opacity: 0.7;
+  }
+}
