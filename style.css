@@ -123,9 +123,9 @@ textarea {
 .pos3 { top: 50%; left: 5%; transform: translateY(-50%); }
 .pos4 { bottom: 350px; right: 80px; }
 .pos5 { bottom: 20px; left: 50%; transform: translateX(-50%); }
-.pos6 { bottom: 250px; right: 475px; }
-.pos7 { bottom: 250px; left: 475px; }
-.pos8 { top: 45px; left: 50%; transform: translateX(-50%); width: 400px;  opacity: 0.03; z-index: 4; }
+.pos6 { bottom: 165px; right: 475px; }
+.pos7 { bottom: 165px; left: 475px; }
+.pos8 { top: 145px; left: 50%; transform: translateX(-50%); width: 400px;  opacity: 0.03; z-index: 4; }
 
 
 @media (max-width: 600px) {
@@ -134,4 +134,14 @@ textarea {
     width: 60px;
     opacity: 0.7;
   }
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #f76b8a;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Tangerine', cursive;
+  text-shadow: 1px 1px 2px #dcdcdc;
 }
